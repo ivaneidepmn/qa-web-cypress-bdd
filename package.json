@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Projeto de automação de testes web desenvolvido para demonstrar boas práticas de **Qualidade de Software (QA)**, utilizando **Cypress**, **JavaScript** e **BDD (Gherkin)**.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "cy:open": "cypress open",
+  "cy:run": "cypress run",
+  "test": "npm run cy:run"
+},
   "keywords": [],
   "author": "",
-  "license": "ISC",
+ "license": "MIT",
   "devDependencies": {
     "cypress": "^15.8.1"
   }
